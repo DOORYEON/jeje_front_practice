@@ -1,0 +1,52 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* 모든 요소에 box-sizing: border-box 적용 */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column; /* 수직으로 배치 */
+  align-items: center; /* 가운데 정렬 */
+  width: 100%;
+  max-width: 600px; /* 최대 너비 600px */
+  background-color: #007bff; /* 파란색 배경 */
+  height: 100%; /* 화면 전체 높이 사용 */
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  color: white;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit; /* 배경색 상속 */
+  flex-shrink: 0; /* header의 크기가 줄어들지 않도록 고정 */
+}
+
+.content-container {
+  background-color: #fff;
+  width: 100%; /* 창 크기에 따라 100%로 줄어듦 */
+  max-width: 600px; /* 최대 너비를 600px로 제한 */
+  border-radius: 15px 15px 0 0; /* 아래쪽 둥근 모서리 */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* 남은 모든 공간을 차지 */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* 내용이 많을 경우 스크롤 가능 */
+}

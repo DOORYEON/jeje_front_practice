@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import Header from './components/Header'; // 새로 만든 Header 컴포넌트
+import GraphPage from './pages/GraphPage'; // 그래프 및 플랜 리스트가 포함된 페이지
+import './styles/App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='app-container'>
+            <Header />
+            <div className='content-container'>
+                <GraphPage /> {/* 이 컴포넌트 안에 차트와 리스트가 포함되어 있음 */}
+            </div>
+        </div>
+    );
 }
 
 export default App;

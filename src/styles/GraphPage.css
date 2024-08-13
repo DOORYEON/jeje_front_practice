@@ -1,0 +1,12 @@
+/* GraphPage.css */
+
+.chart-container {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-list {
+  margin-top: 20px;
+}
